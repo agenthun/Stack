@@ -5,11 +5,11 @@ import java.util.Arrays;
 /**
  * Created by Agent Henry on 2015/7/27.
  */
-public class MyStack<E> {
+public class MyArrayStack<E> {
     private Object[] stack;
     private int size;
 
-    public MyStack() {
+    public MyArrayStack() {
         stack = new Object[10];
     }
 
@@ -47,7 +47,7 @@ public class MyStack<E> {
     }
 
     public static void main(String[] args) {
-        MyStack<Integer> s = new MyStack<>();
+        MyArrayStack<Integer> s = new MyArrayStack<>();
         s.push(1);
         s.push(2);
         System.out.println("元素个数 = " + s.size);
